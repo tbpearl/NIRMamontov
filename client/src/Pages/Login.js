@@ -28,59 +28,62 @@ const Login = () => {
   };
   return (
     <div
-      className="flex flex-col items-center justify-center h-screen"
+      className='flex flex-col items-center justify-center h-screen'
       style={{
         backgroundImage: `url(${background})`,
         backgroundSize: "cover",
-      }}>
-      <div className="text-center">
+      }}
+    >
+      <div className='text-center'>
         <img
-          className="w-80 h-70 mb-auto sm:mb-20 mx-auto min-w-[150px]"
+          className='w-80 h-70 mb-auto sm:mb-20 mx-auto min-w-[150px]'
           src={logo}
-          alt="logo"
+          alt='logo'
         />
-        <form onSubmit={loginUser} className="mx-auto mt-4 text-left">
-          <div className="mb-8">
-            <h1 className="text-3xl font-bold mt-4 mb-2 text-gray-600 text-left">
-              Login
+        <form onSubmit={loginUser} className='mx-auto mt-4 text-left'>
+          <div className='mb-8'>
+            <h1 className='text-3xl font-bold mt-4 mb-2 text-gray-600 text-left'>
+              Логин
             </h1>
-            <p className="text-gray-500 text-left">
-              Need an account?{" "}
+            <p className='text-gray-500 text-left'>
+              Нужен аккаунт?{" "}
               <span
                 onClick={(e) => navigate("/register")}
-                className="text-lime-500 cursor-pointer">
-                Sign Up
+                className='text-black-800 cursor-pointer underline'
+              >
+                Регистрация
               </span>
             </p>
           </div>
-          <div className="text-left">
-            <label className="block mb-1">Email</label>
+          <div className='text-left'>
+            <label className='block mb-1'>Email</label>
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email"
-              type="email"
-              className="w-full px-4 py-2 border rounded-lg mb-4"
+              placeholder='Email'
+              type='email'
+              className='w-full px-4 py-2 border rounded-lg mb-4'
             />
           </div>
-          <div className="text-left">
-            <label className="block mb-1">Password</label>
+          <div className='text-left'>
+            <label className='block mb-1'>Password</label>
             <input
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Password"
-              type="password"
-              className="w-full px-4 py-2 border rounded-lg mb-4"
+              placeholder='Password'
+              type='password'
+              className='w-full px-4 py-2 border rounded-lg mb-4'
             />
           </div>
-          <div className="flex justify-between items-center">
+          <div className='flex justify-between items-center'>
             <button
-              type="submit"
-              className="bg-lime-500 text-white py-2 px-4 rounded-sm">
-              Login
+              type='submit'
+              className='bg-black text-white py-2 px-4 rounded-sm'
+            >
+              Войти
             </button>
-            <span className="text-sm text-gray-500 cursor-pointer">
-              Forget password ?
+            <span className='text-sm text-gray-500 cursor-pointer'>
+              Забыли пароль?
             </span>
           </div>
         </form>

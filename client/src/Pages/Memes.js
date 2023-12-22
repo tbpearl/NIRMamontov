@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Menubar from "../Components/Menubar";
 import MenuToggle from "../Components/MenuToggle";
 import Navbar from "../Components/Navbar";
+// import memeImage from "../path/to/your/image"; // Import your image here
 
-const ShowcaseManagement = () => {
+const Memes = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleMenuToggle = () => {
@@ -11,20 +12,21 @@ const ShowcaseManagement = () => {
   };
 
   return (
-    <div className="flex">
+    <div className='flex'>
       <div
         className={`w-1/4 h-auto h-screen bg-gray-200 text-gray-500 ${
           showMenu ? "" : "hidden"
-        } lg:block`}>
+        } lg:block`}
+      >
         <Menubar />
       </div>
-      <div className="w-3/4 h-screen">
-        <Navbar pagename={"Showcase Management"} />
+      <div className='w-3/4 h-screen'>
+        <Navbar pagename={"Мемы"} />
         <MenuToggle showMenu={showMenu} handleMenuToggle={handleMenuToggle} />
-        <p>Showcase Management</p>
+        {/* <img src={memeImage} alt='Meme' /> Insert your image here */}
       </div>
     </div>
   );
 };
 
-export default ShowcaseManagement;
+export default Memes;

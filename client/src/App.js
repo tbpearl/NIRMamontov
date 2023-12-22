@@ -3,31 +3,31 @@ import {
   Dashboard,
   Login,
   Register,
-  Role,
-  ContentManagement,
-  CustomerManagement,
+  Visitors,
+  Theory,
+  FideRate,
   HomeService,
-  MarketPlace,
+  Champions,
   Settings,
-  ShowcaseManagement,
-  UserManagement,
+  Memes,
+  News,
 } from "./Pages/index";
 const App = () => {
   return (
     <BrowserRouter>
       <main>
         <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/role-management" element={<Role />} />
-          <Route path="/content-management" element={<ContentManagement />} />
-          <Route path="/customer-management" element={<CustomerManagement />} />
-          <Route path="/home-service" element={<HomeService />} />
-          <Route path="/market-place" element={<MarketPlace />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/showcase-management" element={<ShowcaseManagement />} />
-          <Route path="/user-management" element={<UserManagement />} />
+          <Route path='/' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/visitors' element={<Visitors />} />
+          <Route path='/theory' element={<Theory />} />
+          <Route path='/fiderate' element={<FideRate />} />
+          <Route path='/home-service' element={<HomeService />} />
+          <Route path='/champions' element={<Champions />} />
+          <Route path='/settings' element={<Settings />} />
+          <Route path='/memes' element={<Memes />} />
+          <Route path='/news' element={<News />} />
         </Routes>
       </main>
     </BrowserRouter>

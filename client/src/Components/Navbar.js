@@ -12,17 +12,17 @@ const Navbar = ({ pagename }) => {
   // }, []);
 
   return (
-    <nav className="bg-white flex items-center justify-between h-20 px-8 shadow-sm">
-      <div className="flex items-center">
-        <h1 className="text-lg font-semibold text-gray-500">{pagename}</h1>
+    <nav className='bg-white flex items-center justify-between h-20 px-8 shadow-sm'>
+      <div className='flex items-center'>
+        <h1 className='text-lg font-semibold text-gray-500'>{pagename}</h1>
       </div>
-      <div className="flex items-center">
-        <div className="rounded-full h-10 w-10 bg-gray-300 flex items-center justify-center mr-4">
-          <img src={demouser} alt="avatar" className="rounded-full h-8 w-8" />
+      <div className='flex items-center'>
+        <div className='rounded-full h-10 w-10 bg-gray-300 flex items-center justify-center mr-4'>
+          <img src={demouser} alt='avatar' className='rounded-full h-8 w-8' />
         </div>
-        <div className="flex flex-col text-sm">
-          <span className="font-medium">John Doe</span>
-          <span>Super Admin</span>
+        <div className='flex flex-col text-sm'>
+          <span className='font-medium'>Pavel Mamontov</span>
+          <span>Developer</span>
         </div>
       </div>
     </nav>

@@ -4,7 +4,7 @@ import MenuToggle from "../Components/MenuToggle";
 import Navbar from "../Components/Navbar";
 import UsersTable from "../Components/Table";
 
-const RoleManagement = () => {
+const Visitors = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleMenuToggle = () => {
@@ -12,16 +12,17 @@ const RoleManagement = () => {
   };
 
   return (
-    <div className="flex">
+    <div className='flex'>
       <div
-        className={`w-1/4 h-auto h-screen bg-gray-100 ${
+        className={`w-1/4 h-flex bg-gray-100 ${
           showMenu ? "" : "hidden"
-        } lg:block`}>
+        } lg:block`}
+      >
         <Menubar />
       </div>
-      <div className="w-3/4 h-screen">
+      <div className='w-3/4 h-screen'>
         <MenuToggle showMenu={showMenu} handleMenuToggle={handleMenuToggle} />
-        <Navbar pagename={"Permission and Role Management"} />
+        <Navbar pagename={"Посетители"} />
         <div>
           <UsersTable />
         </div>
@@ -30,4 +31,4 @@ const RoleManagement = () => {
   );
 };
 
-export default RoleManagement;
+export default Visitors;

@@ -1,25 +1,25 @@
 import Login from "./Login";
 import Register from "./Register";
 import Dashboard from "./Dashboard";
-import Role from "./Role";
-import ContentManagement from "./ContentManagement";
-import CustomerManagement from "./CustomerManagement";
+import Visitors from "./Role";
+import Theory from "./Theory";
+import FideRate from "./FideRate";
 import HomeService from "./HomeService";
-import MarketPlace from "./MarketPlcae";
+import Champions from "./Champions";
 import Settings from "./Settings";
-import ShowcaseManagement from "./ShowcaseManagement";
-import UserManagement from "./UserManagement";
+import Memes from "./Memes";
+import News from "./News";
 
 export {
   Login,
   Register,
   Dashboard,
-  Role,
-  ContentManagement,
-  CustomerManagement,
+  Visitors,
+  Theory,
+  FideRate,
   HomeService,
-  MarketPlace,
+  Champions,
   Settings,
-  ShowcaseManagement,
-  UserManagement,
+  Memes,
+  News,
 };
